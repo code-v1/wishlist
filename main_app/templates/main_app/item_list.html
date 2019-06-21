@@ -22,7 +22,7 @@
     <tbody>
            
         <th>{{ item.description }}</th>
-        <th><a href= “{% url 'item_delete'  %}“ >Delete</a></th>
+        <th><a href="{% url 'item_delete' item.id %}" >Delete</a></th>
        
     </tbody>
     {% endfor %}
